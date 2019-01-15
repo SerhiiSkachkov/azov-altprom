@@ -1,0 +1,304 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='css/jquery-ui.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        header#header.header
+            .header-top
+                .wrapper
+                    .header-top-box
+                        .number.number-top.js-toggle-mobile-bottom
+                            .icon-phone-call-button
+                            .number-box
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+
+                        .comments
+                            .icon.icon-comment
+                            a.comments-link(href="")
+                                span.comments-link-txt Отзывы
+                                span.comments-link-numb|(22)
+                                 
+                        .favorite
+                            .icon.icon-like
+                            a.favorite-link(href="")
+                                span.favorite-link-txt Избранные продукты
+                                span.favorite-link-numb|(22)
+                        .shopping
+                            .icon-shopping-cart
+                            a.shopping-link(href="")
+                                span.shopping-link-numb (5)
+                    .number.number-mobile-bottom
+                        .number-box
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+
+            .header-middle
+                .wrapper
+                    .header-middle-box
+                        a.logo(href="") 
+                            img(src="img/logo.png", alt="logo")
+
+                        .header-middle-center-box
+                            nav.top-nav
+                                ul.top-nav-list
+                                    li
+                                        a(href="") Оплата
+                                    li
+                                        a(href="") Контакты
+                                    li
+                                        a(href="") Сервис
+                                    li
+                                        a(href="") Доставка 
+                                    li
+                                        a(href="") О нас
+                            .search
+                                form.serch-form
+                                    input.serch-form-field(type="text" placeholder="поиск по сайту")
+                        .hamburger.hamburger--spin.js-hamburger
+                            .hamburger-box
+                                .hamburger-inner
+                        .basket
+                            .basket-image
+                                img(src="img/cash.png", alt="cash")
+                            .basket-info-box
+                                .basket-product В карзине 
+                                    a(href="") 5 товаров
+                                .basket-price На сумму 
+                                    span 1280 грн
+            .header-bottom
+                .wrapper
+                    nav.main-nav
+                        ul.nav-list.main-nav-list
+                            li.js-nav-list
+                                p Алюминиевые шкивы
+                                ul.sub-nav
+                                    li
+                                        a(href="") Алюминиевые шкивы - 1
+                                    li
+                                        a(href="") Алюминиевые шкивы - 2
+                            li.js-nav-list
+                                p Алюминиевые колесные проставки
+                                ul.sub-nav
+                                    li
+                                        a(href="") Алюминиевые колесные проставки - 1
+                                    li
+                                        a(href="") Алюминиевые колесные проставки - 2
+                            li.js-nav-list
+                                p Болты колесные
+                                ul.sub-nav
+                                    li
+                                        a(href="") Болты колесные - 1
+                                    li
+                                        a(href="") Болты колесные - 2
+                            li
+                                a(href="") Оптовикам
+            .breadcrumbs
+                .wrapper
+                    .breadcrumbs-box
+                        ul.breadcrumbs-list
+                            li 
+                                a(href="") Главная 
+                            li 
+                                a(href="") Алюминиевые колесные проставки
+                            li 
+                                span Колесные проставки
+            .mobile-nav
+                .wrapper
+                    ul.mobile-nav-list
+                        li
+                            a(href="") Оплата
+                        li
+                            a(href="") Доставка
+                        li
+                            a(href="") Сервис
+                        li
+                            a(href="") О нас 
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Алюминиевые шкивы
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Алюминиевые шкивы - 1
+                                li
+                                    a(href="") Алюминиевые шкивы - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Алюминиевые колесные проставки
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Алюминиевые колесные проставки - 1
+                                li
+                                    a(href="") Алюминиевые колесные проставки - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Болты колесные
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Болты колесные - 1
+                                li
+                                    a(href="") Болты колесные - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Оптовикам
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Услуги - 1
+                                li
+                                    a(href="") Услуги - 2
+        main.main-wrap
+            section.cart
+                .wrapper
+                    .cart-box
+                        .cart-gallery
+                            a.cart-gallery-item-large(href="img/product.png" data-fancybox="group")
+                                .cart-img
+                                    img(src="img/product.png" alt="product")
+                            .cart-gallery-box
+                                a.cart-gallery-item(href="img/product.png" data-fancybox="group")
+                                    .cart-img
+                                        img(src="img/product.png" alt="product")
+                                a.cart-gallery-item(href="img/product.png" data-fancybox="group")
+                                    .cart-img
+                                        img(src="img/product.png" alt="product")
+                                a.cart-gallery-item(href="img/product.png" data-fancybox="group")
+                                    .cart-img
+                                        img(src="img/product.png" alt="product")
+                                a.cart-gallery-item(href="img/product.png" data-fancybox="group")
+                                    .cart-img
+                                        img(src="img/product.png" alt="product")
+                                a.cart-gallery-item(href="img/product.png" data-fancybox="group")
+                                    .cart-img
+                                        img(src="img/product.png" alt="product")
+                        .cart-about
+                            h3.cart-name АНОДИРОВАННАЯ ПРОСТАВКА КОЛЕСНАЯ 15 ММ, ЦО 71,6 / Ø175 
+                            <ul class="rating clearfix">
+                                <li class="current" style="width: 40%;"><span class="star1"  title="Рейтинг плохо"></span></li>
+                                <li><span class="star2" title="Рейтинг норм"></span></li>
+                                <li><span class="star3" title="Рейтинг среднее"></span></li>
+                                <li><span class="star4" title="Рейтинг хорошо"></span></li>
+                                <li><span class="star5" title="Рейтинг очень хорошо"></span></li>
+                            </ul>
+                            .cart-articul Артикул: 3306
+                            .cart-precence 
+                                span В наличии:
+                                img(src="img/status-yes.png" alt="yes")
+                            a.add-like.add-like--left.js-add-favorites(href="")
+                                .icon.icon-like 
+                                span Добавить в избранное
+
+                            .cart-add
+                                .cart-add-price Цена: 
+                                    span 1800 грн
+                                a.btn-fast-bay(href="") Быстрый заказ                                    
+                                a.btn-bay(href="") Купить
+                            .cart-info
+                                ul.cart-tabs 
+                                    li 
+                                        a(href="#cart-description") Описание
+                                    li 
+                                        a(href="#cart-feature") Характеристики
+                                #cart-description.cart-stage
+                                    .cart-stage-item
+                                        span  Центрующее отверстие 
+                                        span  71,6
+                                    .cart-stage-item
+                                        span  Толщина
+                                        span  15 мм
+                                    .cart-stage-item
+                                        span  Производитель  
+                                        span  Азов Альпром
+                                    .cart-stage-item
+                                        span  Страна 
+                                        span  Украина
+                                    .cart-stage-item
+                                        span  PSD
+                                        span  5х130
+                                #cart-feature.cart-stage
+                                    .cart-stage-item
+                                        span  Центрующее отверстие 
+                                        span  71,6
+                                    .cart-stage-item
+                                        span  Толщина
+                                        span  15 мм
+                                    .cart-stage-item
+                                        span  Производитель  
+                                        span  Азов Альпром
+                                    .cart-stage-item
+                                        span  Страна 
+                                        span  Украина
+                                    .cart-stage-item
+                                        span  PSD
+                                        span  5х130
+            section.product
+                .wrapper
+                    .produc-box
+                        h2.title.title-mod.text-left  
+                            | Лучшие предложения
+                            span.title-line
+                        .product-list.product-list-better
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+
+
+        include components/footer.pug
+        include components/call-modal.pug
+        include components/call.pug
+        include components/scroll.pug
+        include components/script.pug

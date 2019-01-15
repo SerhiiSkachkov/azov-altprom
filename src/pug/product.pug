@@ -1,0 +1,379 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='css/jquery-ui.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        header#header.header
+            .header-top
+                .wrapper
+                    .header-top-box
+                        .number.number-top.js-toggle-mobile-bottom
+                            .icon-phone-call-button
+                            .number-box
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+                                a(href="tel:+380663888555") +38 (068) 3-888-555
+
+                        .comments
+                            .icon.icon-comment
+                            a.comments-link(href="")
+                                span.comments-link-txt Отзывы
+                                span.comments-link-numb|(22)
+                                 
+                        .favorite
+                            .icon.icon-like
+                            a.favorite-link(href="")
+                                span.favorite-link-txt Избранные продукты
+                                span.favorite-link-numb|(22)
+                        .shopping
+                            .icon-shopping-cart
+                            a.shopping-link(href="")
+                                span.shopping-link-numb (5)
+                    .number.number-mobile-bottom
+                        .number-box
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+                            a(href="tel:+380663888555") +38 (068) 3-888-555
+
+            .header-middle
+                .wrapper
+                    .header-middle-box
+                        a.logo(href="") 
+                            img(src="img/logo.png", alt="logo")
+
+                        .header-middle-center-box
+                            nav.top-nav
+                                ul.top-nav-list
+                                    li
+                                        a(href="") Оплата
+                                    li
+                                        a(href="") Контакты
+                                    li
+                                        a(href="") Сервис
+                                    li
+                                        a(href="") Доставка 
+                                    li
+                                        a(href="") О нас
+                            .search
+                                form.serch-form
+                                    input.serch-form-field(type="text" placeholder="поиск по сайту")
+                        .hamburger.hamburger--spin.js-hamburger
+                            .hamburger-box
+                                .hamburger-inner
+                        .basket
+                            .basket-image
+                                img(src="img/cash.png", alt="cash")
+                            .basket-info-box
+                                .basket-product В карзине 
+                                    a(href="") 5 товаров
+                                .basket-price На сумму 
+                                    span 1280 грн
+            .header-bottom
+                .wrapper
+                    nav.main-nav
+                        ul.nav-list.main-nav-list
+                            li.js-nav-list
+                                p Алюминиевые шкивы
+                                ul.sub-nav
+                                    li
+                                        a(href="") Алюминиевые шкивы - 1
+                                    li
+                                        a(href="") Алюминиевые шкивы - 2
+                            li.js-nav-list
+                                p Алюминиевые колесные проставки
+                                ul.sub-nav
+                                    li
+                                        a(href="") Алюминиевые колесные проставки - 1
+                                    li
+                                        a(href="") Алюминиевые колесные проставки - 2
+                            li.js-nav-list
+                                p Болты колесные
+                                ul.sub-nav
+                                    li
+                                        a(href="") Болты колесные - 1
+                                    li
+                                        a(href="") Болты колесные - 2
+                            li
+                                a(href="") Оптовикам
+            .breadcrumbs
+                .wrapper
+                    .breadcrumbs-box
+                        ul.breadcrumbs-list
+                            li 
+                                a(href="") Главная 
+                            li 
+                                a(href="") Алюминиевые колесные проставки
+                            li 
+                                span Колесные проставки
+            .mobile-nav
+                .wrapper
+                    ul.mobile-nav-list
+                        li
+                            a(href="") Оплата
+                        li
+                            a(href="") Доставка
+                        li
+                            a(href="") Сервис
+                        li
+                            a(href="") О нас 
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Алюминиевые шкивы
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Алюминиевые шкивы - 1
+                                li
+                                    a(href="") Алюминиевые шкивы - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Алюминиевые колесные проставки
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Алюминиевые колесные проставки - 1
+                                li
+                                    a(href="") Алюминиевые колесные проставки - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Болты колесные
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Болты колесные - 1
+                                li
+                                    a(href="") Болты колесные - 2
+                        li.mobile-nav-toggle.js-mobile-nav-toggle
+                            p Оптовикам
+                            ul.mobile-sub-nav
+                                li
+                                    a(href="") Услуги - 1
+                                li
+                                    a(href="") Услуги - 2
+
+        main.main-wrap                  
+            section.product.product-page
+                .wrapper
+                    h2.title.title-mod.text-left  
+                        | Болты
+                        span.title-line   
+                    .product-box
+                        .product-filter
+                            form.product-form
+                                .produc-range
+                                    label.produc-range-lbl(for="price") Цена:
+                                    input#price(type="text" readonly)
+                                    #price-range
+                            .product-filter-item
+                                .product-filter-item-ttl.product-filter-item-trigger.js-product-filter-item-trigger Производитель
+                                .product-filter-item-list
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                            .product-filter-item
+                                .product-filter-item-ttl.product-filter-item-trigger.js-product-filter-item-trigger Тип
+                                .product-filter-item-list
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                            .product-filter-item
+                                .product-filter-item-ttl.product-filter-item-trigger.js-product-filter-item-trigger Размер
+                                .product-filter-item-list
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                                    a.js-product-filter-item-link(href="") Кенон
+                            .product-filter-item
+                                .product-filter-item-ttl Марка                                
+                                select#mark-auto(size="1")
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                            .product-filter-item
+                                .product-filter-item-ttl Модель                            
+                                select#mark-model(size="1")
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                            .product-filter-item
+                                .product-filter-item-ttl Объем                          
+                                select#yardage-auto(size="1")
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                            .product-filter-item
+                                .product-filter-item-ttl Год выпуска                         
+                                select#year-auto(size="1")
+                                    option() acura 
+                                    option() acura
+                                    option() acura
+                                    option() acura
+                            input.btn.btn-choice(type="submit" value="Поиск")   
+
+                        .product-content
+                            .product-list
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить
+                                .product-item
+                                    a.product-item-link(href="")
+                                    .product-img
+                                        img(src="img/product.png", alt="product")
+                                    .product-about
+                                        h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                        a.add-like.js-add-favorites(href="")
+                                            .icon.icon-like 
+                                            span Добавить в избранное
+                                        .product-info
+                                            .product-price 350 
+                                                span грн
+                                            a.btn.btn-add(href="") Купить   
+                            .product-instruction
+                                h2.title.title-mod.text-left  
+                                    | Как правильно выбрать  колесные проставки
+                                    span.title-line
+                                .product-instruction-content
+                                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque rerum quas, sit maxime eum alias numquam unde eius impedit, at ratione ab repellat, maiores quaerat minus aperiam. Molestiae impedit, nihil.
+                                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque rerum quas, sit maxime eum alias numquam unde eius impedit, at ratione ab repellat, maiores quaerat minus aperiam. Molestiae impedit, nihil.
+                                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque rerum quas, sit maxime eum alias numquam unde eius impedit, at ratione ab repellat, maiores quaerat minus aperiam. Molestiae impedit, nihil.
+                                    p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque rerum quas, sit maxime eum alias numquam unde eius impedit, at ratione ab repellat, maiores quaerat minus aperiam. Molestiae impedit, nihil.
+
+
+
+                    .call
+                        a.call-link(href="")
+                            .icon.icon-phone-working-indicator
+
+        include components/footer.pug                        
+        include components/call-modal.pug
+        include components/call.pug
+        include components/scroll.pug
+        include components/script.pug

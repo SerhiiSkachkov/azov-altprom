@@ -1,0 +1,61 @@
+.foo
+    color: $white-color
+    margin: 0 auto
+    background: linear-gradient(to bottom, rgba(142,0,0,1) 0%,rgba(176,0,0,1) 50%,rgba(201,0,0,1) 100%)
+
+.foo-logo-box
+    text-align: center
+    padding: 10px 0px
+
+.foo-logo:hover
+    opacity: 0.6
+
+.foo-dev-logo:hover
+    opacity: 0.6
+    
+.foo-box
+    padding: 27px 0px 27px
+
+.foo-menu
+    padding: 10px 0px
+
+.foo-menu-list
+    text-align: center
+
+.foo-menu-list li
+    margin-bottom: 5px
+
+.foo-menu-list li a
+    color: $text-white
+    font-size: 16px
+    border-bottom: 1px solid $text-white
+
+.foo-menu-list li a:hover
+    color: $black-color
+    border-bottom: 1px solid $black-color
+
+.foo-dev
+    padding: 10px 0px
+    text-align: center
+
+@media(min-width: 768px)    
+    .foo-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    .foo-menu
+        width: 100%
+    .foo-menu-list
+        display: flex
+        justify-content: space-between
+    .foo-logo-box
+        text-align: left
+
+@media(min-width: 992px) 
+    .foo-menu
+        width: 50%
+        order: 2
+    .foo-logo-box
+        order: 1
+    .foo-dev
+        order: 3

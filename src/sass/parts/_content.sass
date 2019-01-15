@@ -1,0 +1,427 @@
+@import "../helpers/mixins"
+@import "../helpers/variables"
+
+html 
+  -webkit-box-sizing: border-box
+          box-sizing: border-box
+  -ms-overflow-style: scrollbar
+
+*, ::after, ::before 
+  -webkit-box-sizing: inherit
+          box-sizing: inherit
+
+.wrapper
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+@media (min-width: 576px) 
+  .wrapper
+    max-width: 540px 
+
+@media (min-width: 768px) 
+  .wrapper
+    max-width: 720px 
+
+@media (min-width: 992px) 
+  .wrapper
+    max-width: 960px 
+
+@media (min-width: 1200px) 
+  .wrapper
+    max-width: 1030px
+
+body
+    display: block
+    width: 100%
+    height: 100%
+    background-color: #fff
+
+.menu_open
+  overflow: hidden
+  
+.clearfix:after 
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.main-wrap
+  margin: 0 auto
+  overflow: hidden
+  background-color: white
+    
+.hidden
+  display: none
+
+.title
+    text-align: center
+    font-size: 22px
+    margin: 10px 0px
+
+.title-mod
+  display: flex
+  align-items: center
+
+.title-line
+    margin-left: 15px
+    height: 5px
+    right: 0
+    top: 15px
+    flex: auto
+    background: linear-gradient(to right,#f6fbfd 0,$primary-color 100%)
+
+.title_middle
+    font-size: 18px
+
+.title_small
+    font-size: 16px
+
+/* text position */
+
+.text-left 
+    text-align: left!important
+
+.text-center 
+    text-align: center!important
+
+
+.text-right 
+    text-align: right!important
+
+//buttons
+.btn
+    border-radius: 3px
+    border: 1px solid $black-color
+    color: $white-color
+
+.btn-bay    
+  background: #4cad17
+  color: $white-color
+  border-radius: 3px
+  padding: 5px 10px
+  border: 1px solid #4cad17
+  &:hover
+    background: $white-color
+    color: #4cad17
+
+.btn-fast-bay    
+  background: rgb(37, 108, 238)
+  color: $white-color
+  border-radius: 3px
+  padding: 5px 10px
+  border: 1px solid rgb(37, 108, 238)
+  &:hover
+    background: $white-color
+    color: rgb(37, 108, 238)
+
+.btn-send
+    background: url(../img/btn-bg.png) center top no-repeat/cover
+    height: 30px
+    &:hover
+      color: $primary-color
+
+.btn-choice
+    background-image: url(../img/btn-bg.png)
+    background-color: $black-color
+    background-position: center top 
+    background-repeat: no-repeat
+    height: 40px
+    width: 100%
+    font-size: 20px
+    &:hover
+      color: $primary-color     
+
+.cart-add > .btn-add-cart
+    width: 120px
+    height: 40px
+    background-size: 25px, cover
+    line-height: 40px
+    background-position: 10px center,left center
+    text-align: center
+    padding-left: 40px
+
+.btn-add
+    width: 93px
+    height: 28px
+    line-height: 28px
+    background-image: url(../img/btn-bg-cash.png), url(../img/btn-bg.png)
+    background-position: 5px center, left center
+    background-repeat: no-repeat, no-repeat
+    text-align: right
+    padding-left: 30px
+    padding-right: 15px
+    position: relative
+    z-index: 1
+
+.btn-add:hover
+    box-shadow: 0px 0px 6px 1px rgba(0,0,0,.75)
+
+//breadcrumbs
+.breadcrumbs
+    padding-top: 5px
+
+.breadcrumbs-box
+    padding-top: 5px
+    padding-bottom: 5px
+
+.breadcrumbs-list li
+    display: inline-block
+    font-size: 12px
+
+.breadcrumbs-list li a
+    position: relative
+    color: $black-color
+    padding-right: 15px
+    &:hover
+      color: $primary-color
+    &:before
+      content: ""
+      position: absolute
+      right: -3px
+      bottom: 3px
+      border: 5px solid transparent
+      border-left: 5px solid  $primary-color
+
+.breadcrumbs-list li span
+    color: $gray-color
+
+@media(min-width: 768px)
+    .breadcrumbs-list li
+      font-size: 14px
+      margin-right: 5px
+
+//page call
+.call
+    position: fixed
+    margin: 0 auto
+    left: 0px
+    right: 0px
+    text-align: center
+    bottom: 10px
+    z-index: 11
+
+.call-link:before
+    content: ''
+    display: block
+    position: absolute
+    width: 60px
+    height: 60px
+    top: -5px
+    left: -5px
+    border: 2px solid #4cad17
+    border-radius: 50%
+    transition: 3s
+    animation: bloom-width 3s ease-out infinite
+
+
+.call-link
+    position: relative
+    background-color: #4cad17
+    border-radius: 50%
+
+.icon-phone-working-indicator
+    width: 50px
+    height: 50px
+    text-align: center
+    animation: bloom 1s ease-in infinite
+
+.icon-phone-working-indicator:before
+    font-size: 20px
+    line-height: 50px
+
+@keyframes bloom 
+  0%
+    opacity: 0.3
+  40% 
+    opacity: 0.8
+  100% 
+    opacity: 1
+
+@keyframes bloom-width
+  from
+    transform: scale(0.8)
+    opacity: 0.3
+  to
+    transform: scale(1.06)
+    opacity: 0.8
+
+@media(min-width: 768px)
+  .call
+    position: fixed
+    right: 20px
+    bottom: 20px
+    left: auto
+
+//scroll
+.scroll
+    display: none
+    width: 50px
+    height: 50px
+    background: $light-gray-color
+    position: fixed
+    right: 10px
+    bottom: 10px
+    z-index: 10
+    border-radius: 50%
+
+.scroll > svg > path
+    transition: $default-transition
+
+.scroll:hover
+  svg > path
+    fill: $primary-color
+
+.scroll > svg
+    padding: 10px
+
+@media(min-width: 768px)
+  .scroll
+    top: calc(50% - 25px)
+    bottom: calc(50% - 25px)
+    right: 20px
+
+// add tlike block
+.add-like
+    padding: 5px 0px
+    color: $gray-color
+    display: flex
+    align-items: center
+    margin-left: auto
+    position: relative
+    z-index: 1
+    justify-content: flex-end
+
+.add-like--left
+      justify-content: flex-start
+      
+.add-like > .icon
+    margin-right: 4px
+
+.add-like:hover
+    color: $primary-color
+    .icon:before
+        color: $primary-color
+
+.add-price
+    color: $primary-color
+    font-weight: bold
+    font-size: 28px
+
+.add-price > span
+    font-weight: 500
+    font-size: 16px
+
+.add-like
+    text-align: right
+
+.add-like--favorites
+    color: $primary-color
+
+.add-like--favorites 
+    .icon:before
+        color: $primary-color!important
+
+.add-like > .icon:before
+    color: $gray-color
+    @include transition($default-transition)
+
+
+//rating stars
+.rating 
+  position: relative
+  width: 85px
+  height: 14px
+  margin: 10px 0
+  list-style: none
+  background: url(../img/rating-star.png)
+
+.rating li 
+  float: left
+  height: 14px
+
+
+.rating li.current 
+  z-index: 1
+  background: url(../img/rating-star.png) left bottom
+
+.rating li span[class*="star"] 
+  position: absolute
+  z-index: 5
+  display: block
+  width: 17px
+  height: 14px
+  cursor: pointer
+
+.rating li span[class*="star"]:hover 
+  left: 0
+  z-index: 2
+  background: url(../img/rating-star.png) left bottom
+
+
+.rating li span.star1 
+  left: 0
+
+.rating li span.star1:hover 
+  width: 17px
+
+.rating li span.star2 
+  left: 17px
+
+.rating li span.star2:hover 
+  width: 34px
+
+.rating li span.star3 
+  left: 34px
+
+.rating li span.star3:hover 
+  width: 51px
+
+.rating li span.star4 
+  left: 51px
+
+.rating li span.star4:hover 
+  width: 68px
+
+.rating li span.star5 
+  left: 68px
+
+.rating li span.star5:hover 
+  width: 85px
+
+
+//modal call
+.modal-call
+    display: none
+    border-radius: 5px
+    text-align: center
+    max-width: 300px
+
+.modal-call-box
+    max-width: 200px
+    margin: 0 auto
+    
+.modal-call-ttl
+    font-size: 20px
+    margin-bottom: 10px
+    color: $primary-color
+
+.modal-call-sub-ttl
+    margin-bottom: 5px
+
+.modal-call-field
+    border: 1px solid $gray-color
+    border-radius: 5px
+    height: 30px
+    padding-left: 5px
+    padding-right: 5px
+    margin-bottom: 10px
+    width: 200px
+
+.modal-call-field:focus
+      border: 1px solid $primary-color
+
+

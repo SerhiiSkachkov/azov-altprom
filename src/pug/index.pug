@@ -1,0 +1,327 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset ='UTF-8')
+        meta(http-equiv='X-UA-Compatible', content='IE=edge')
+        meta(name='description' content='')
+        meta(name='viewport' content='initial-scale=1.0, width=device-width')
+        link(href="https://fonts.googleapis.com/css?family=PT+Sans:400,500,700,900" rel="stylesheet")
+        link(rel='stylesheet' href='css/jquery.fancybox.min.css')
+        link(rel='stylesheet' href='css/jquery-ui.css')
+        link(rel='stylesheet' href='css/styles.min.css')
+        title new
+    body
+        
+        include components/header.pug
+
+        main.main-wrap
+            section.choice
+                .wrapper
+                    .choice-wrapper
+                        h2.title Подбор колесных проставок по марке автомобиля
+                        .choice-box
+                            .choice-list
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_kia.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_scoda.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_hyu.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_ford.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_wv.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_lex.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_bmw.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_toyota.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_volvo.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_pegeot.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_mitsub.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_land.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_renault.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_audi.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_kia.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_scoda.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_hyu.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_ford.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_wv.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_lex.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_bmw.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_toyota.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_volvo.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_pegeot.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_mitsub.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_land.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_renault.svg", alt="brand")
+                                .choice-item
+                                    a.js-choice-app(href="")
+                                        img(src="img/choice_audi.svg", alt="brand")
+
+                            .choice-form-box
+                                .choice-form-wrapper
+                                    a.choice-form-close.js-choice-close(href="") +
+                                    form.choice-form
+                                        .choice-form-item
+                                            .choice-type Марка
+                                            .choice-select-box
+                                                select#mark-auto
+                                                    option() acura 
+                                                    option() acura
+                                                    option() acura
+                                                    option() acura
+                                        .choice-form-item
+                                            .choice-type Модель
+                                            .choice-select-box
+                                                select#model-auto 
+                                                    option() acura 
+                                                    option() acura
+                                                    option() acura
+                                                    option() acura
+                                        .choice-form-item
+                                            .choice-type Объем
+                                            .choice-select-box
+                                                select#yardage-auto
+                                                    option() acura 
+                                                    option() acura
+                                                    option() acura
+                                                    option() acura
+                                        .choice-form-item
+                                            .choice-type Год выпуска
+                                            .choice-select-box
+                                                select#year-auto
+                                                    option() acura 
+                                                    option() acura
+                                                    option() acura
+                                                    option() acura
+                                        input.btn.btn-choice(type="submit" value="Поиск")   
+                    .choice-content
+                        .choice-content-wrap
+                            h3.title.title-small Алюминиевые колесные проставки
+                            .choice-content-txt 
+                                p Проставки для расширения колесной базы автомобиля изготовляются из алюминий-деформируемых сплавов различных марок. Именно такие алюминиевые изделия вы можете приобрести в нашем интернет-магазине. У нас продаются проставки собственного производства по приемлемым ценам.
+                                p Проставки для расширения колесной базы автомобиля
+                                p Цель задействования проставок — изменение вылета ЕТ колесных дисков и заводских параметров центрирующего отверстия по ступице.
+                                    br
+                                    | После установки алюминиевых проставок определённой толщины, вы получите автомобиль, который будет более устойчив на дороге. Плюс к этому, проставки не дадут дискам вместе с шинами соприкасаться с элементами подвески, тем самым, предупреждая их износ.                        
+            section.product
+                .wrapper
+                    .produc-box.produc-box-new
+                        h2.title.title-mod.text-left  
+                            | Новинки
+                            span.title-line
+                        .product-list.product-list-new
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                    .produc-box.produc-box-top
+                        h2.title.title-mod.text-left  
+                            | Топ продаж
+                            span.title-line
+                        .product-list.product-list-top
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+                            .product-item
+                                a.product-item-link(href="")
+                                .product-img
+                                    img(src="img/product.png", alt="product")
+                                .product-about
+                                    h3.product-name ПРОСТАВКА КОЛЕСНАЯ 5 ММ, ЦО 63,4/ Ø150
+                                    a.add-like.js-add-favorites(href="")
+                                        .icon.icon-like 
+                                        span Добавить в избранное
+                                    .product-info
+                                        .product-price 350 
+                                            span грн
+                                        a.btn.btn-add(href="") Купить
+        include components/footer.pug                        
+        include components/call-modal.pug
+        include components/call.pug
+        include components/scroll.pug
+        include components/script.pug

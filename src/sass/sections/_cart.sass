@@ -1,0 +1,126 @@
+.cart
+  padding: 20px 0px
+
+.cart-img
+  font-size: 0px
+
+.cart-gallery
+  padding: 20px 0px
+
+.cart-about
+  font-size: 16px
+
+.cart-gallery-box
+  display: flex
+  flex-flow: wrap
+
+.cart-gallery-item-large
+  width: 100%
+  text-align: center
+  border: 1px solid $light-gray-color
+  margin-bottom: 10px
+  height: 288px
+  display: table
+  .cart-img
+    display: table-cell
+    vertical-align: middle
+    img
+      width: 100%
+
+.cart-gallery-item
+  width: 32.5%
+  margin-right: 1.25%
+  text-align: center
+  border: 1px solid $light-gray-color
+  margin-bottom: 5px
+  background-color: $white-color
+  &:nth-of-type(3n)
+    margin-right: 0px
+
+.cart-name
+  font-size: 20px
+  margin-bottom: 15px
+
+.cart-precence
+  display: flex
+  align-items: center
+  padding: 10px 0px
+  span
+    margin-right: 10px
+
+.cart-articul
+  padding: 5px 0px
+
+
+.cart-tabs 
+  display: flex
+  justify-content: space-between
+.cart-tabs li
+  width: 49.5%
+
+.cart-stage
+  border: 1px solid $primary-color
+  margin-top: -1px
+  border-radius: 2px
+  padding: 10px 0px
+
+.cart-tabs li a
+  text-align: center
+  display: block
+  padding: 5px  10px 5px 10px
+  border: 1px solid $light-gray-color
+  border-radius: 5px 5px 0px 0px
+  color: $black-color
+  border-bottom: none
+
+.cart-tabs li a.active
+  border: 1px solid $primary-color
+  background: $white-color
+  border-bottom: none
+
+.cart-stage
+  display: none
+
+.cart-info
+  padding: 10px 0px
+
+.cart-stage-item
+  display: flex
+  margin-bottom: 5px
+
+
+.cart-stage-item span
+  font-size: 14px
+  width: 50%
+  padding: 0px 5px
+  max-height: 32px
+  overflow: hidden
+
+.cart-add-price span
+  color: $primary-color
+  font-weight: 600
+
+.cart-add
+  padding: 10px 0px
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+@media(min-width: 768px)
+  .cart-box
+    display: flex
+    justify-content: space-between
+  .cart-gallery
+    width: 35%
+  .cart-about
+    width: 60%
+    padding: 20px 0px 20px 20px
+    font-size: 18px
+  .cart-name
+    font-size: 24px
+  .cart-stage
+    padding: 15px 5px
+
+@media(min-width: 992px)
+  .cart-add
+    width: 90%

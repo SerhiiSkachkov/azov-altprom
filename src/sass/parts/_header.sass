@@ -1,0 +1,391 @@
+
+.header
+    background-color: $white-color
+
+.header-top
+    background-color: $black-color
+
+.header-top-box
+    display: flex
+    justify-content: space-between
+    align-items: center
+    position: relative
+
+.header-middle
+    padding: 10px 0px
+
+
+.header-middle-box
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header-middle-center-box
+    width: 70%
+    padding: 0px 15px
+
+.top-nav
+    display: none
+
+.logo
+    width: 60px
+
+.search
+    width: 100%
+
+.serch-form-field
+    border: 1px solid $gray-color
+    transform: skew(-15deg)
+    border-radius: 3px 2px 3px 2px
+    padding-left: 20px
+    padding-right: 5px
+    width: 100%
+    height: 30px
+    background: url(../img/search.png) center right no-repeat/ auto
+
+.basket
+    display: none
+
+.number
+    display: flex
+
+.number-mobile-bottom
+    display: none
+
+.number-mobile-bottom .number-box
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 10px 0px
+
+.number-top .number-box
+    display: none
+
+.icon-phone-call-button
+    width: 30px
+    height: 30px
+    margin-right: 5px
+    background-color: $primary-color
+    text-align: center
+
+.icon-phone-call-button:before
+    line-height: 30px
+
+.number-box
+    padding-top: 3px
+
+.number-box a
+    display: block
+    font-size: 10px
+    color: $text-white
+    &:hover
+        color: $primary-color
+
+.main-nav-list
+    display: none
+    @media(min-width: 768px)
+        display: block
+
+.main-sub-nav
+    display: none
+
+.mobile-nav
+    display: none
+    z-index: 100
+.mobile-nav-select
+    display: none
+    
+@media(min-width: 768px)
+    .main-nav-list
+        display: flex
+        justify-content: space-around
+        align-items: center
+        height: 100%    
+        color: $white-color
+    .main-nav-list li
+        position: relative
+        flex: auto
+        height: 100%
+        text-align: center
+        border-right: 1px solid $black-color
+    .main-nav-list li:last-child
+        border-right: none  
+    .main-nav-list li:hover
+        cursor: pointer
+    .main-nav-list a
+        color: $white-color
+    .main-nav
+        border-radius: 8px
+        background-image: url(../img/main-nav-bg.png)
+        background-repeat: no-repeat
+        background-color: $black-color
+        height: 50px    
+    .sub-nav
+        padding-top: 15px
+        padding-bottom: 15px
+        display: none
+    .main-nav-list li > 
+        a,p
+            @include transition($default-transition)
+            line-height: 50px
+            width: 100%
+            padding-left: 10px
+            padding-right: 10px
+        .sub-nav a
+            line-height: 1.4
+            padding: 5px
+    .main-nav-list a,
+    .main-nav-list p
+        &:hover
+            color: $primary-color
+            .sub-nav li > a
+                color: $white-color
+    .main-nav-list .sub-nav li > a:hover
+        color: $primary-color!important
+    .main-nav-list li .sub-nav
+        position: absolute
+        z-index: 10
+        background-color: $black-color
+        top: 40px
+        min-width: 150px
+        width: 100%
+        border-radius: 0px 0px 5px 5px
+        overflow: hidden    
+
+
+@media(max-width:768px)
+    .mobile-nav-select
+        height: 40px
+        width: 100%
+        border-radius: 3px
+        outline: none
+        background-image: url(../img/main-nav-bg.png)
+        background-repeat: no-repeat
+        background-color: $black-color
+        color: $white-color
+        border: none
+        appearance: none
+        padding: 0px 20px
+        font-size: 14px
+        display: block!important
+    .mobile-nav
+        display: block
+        background-color: $black-color
+        transition: left 0.6s ease-in-out
+        padding: 30px 0px
+        height: 100vh
+        width: 80%
+        position: fixed
+        left: -100%
+        top: 0px
+        overflow: scroll
+        background-color: $white-color 
+        border-right: 1px solid $primary-color
+    .mobile-nav-list li
+        margin: 5px 0px
+    .mobile-nav-list a
+        padding-right: 5px
+        color: $text-black
+        &:hover
+            color: $primary-color
+    .mobile-nav-list p
+        padding-right: 5px
+    .mobile-nav--open
+        left: 0px
+    .mobile-nav-toggle
+        position: relative
+    .mobile-nav-toggle:before
+        @include transition($default-transition)
+        content: ""
+        display: block
+        border-right: 1px solid $primary-color
+        border-bottom: 1px solid $primary-color    
+        position: absolute
+        width: 10px
+        height: 10px
+        transform: rotate(-45deg)
+        right: -5px
+    .mobile-nav-toggle--open:before
+        transform: rotate(45deg) 
+    .mobile-sub-nav
+        @include transition($default-transition)
+        display: none
+        padding-left: 5px
+
+    .mobile-sub-nav--open
+        display: block
+
+
+
+.favorite
+    display: flex
+
+.favorite-link
+    color: $text-white
+
+.favorite-link-txt
+    display: none
+
+.favorite-link-numb
+    line-height: 30px
+    margin: 0px 5px
+
+.favorite > .icon-like
+    text-align: center
+    width: 30px
+    height: 30px
+    background-color: $primary-color
+
+.favorite > .icon-like:before
+    line-height: 30px
+
+
+.comments
+    display: flex
+
+.comments-link
+    color: $text-white
+
+.comments-link-txt
+    display: none
+
+.comments-link-numb
+    line-height: 30px
+    margin: 0px 5px
+
+.comments > .icon-comment
+    text-align: center
+    width: 30px
+    height: 30px
+    background-color: $primary-color
+
+.comments > .icon-comment:before
+    line-height: 30px
+
+
+.shopping
+    display: flex
+
+.shopping-link
+    color: $text-white
+
+.shopping-link-numb
+    line-height: 30px
+    margin: 0px 5px
+
+.shopping > .icon-shopping-cart
+    text-align: center
+    width: 30px
+    height: 30px
+    background-color: $primary-color
+
+.shopping > .icon-shopping-cart:before
+    line-height: 30px
+
+.favorite-link,
+.shopping-link,
+.comments-link
+    &:hover
+        color: $primary-color
+
+
+@media(min-width: 768px)
+    .header-top-box 
+        justify-content: flex-end
+    .number-top
+        margin-right: auto
+        flex: auto
+    .number-top .number-box
+        width: 100%
+        display: flex
+        justify-content: space-between
+        padding-right: 10px
+        align-items: center
+    .number-box a 
+        font-size: 12px
+    .favorite-link-txt,
+    .comments-link-txt
+        display: block
+        font-size: 12px
+    .comments-link-numb,
+    .favorite-link-numb
+        font-size: 12px
+    .favorite-link,
+    .comments-link
+        display: flex
+        align-items: center
+        padding: 0px 5px
+    .shopping
+        display: none
+    .header-middle
+        padding: 15px 0px
+    .header-middle-center-box
+        width: 465px
+    .logo
+        width: 80px
+    .basket
+        display: flex
+        font-size: 12px
+    .basket-image
+        width: 30px
+        margin-right: 5px
+    .basket-product a
+        display: block
+        color: $primary-color
+        font-weight: bold
+    .basket-price span
+        color: $primary-color
+        font-weight: bold
+    .top-nav
+        display: block
+    .top-nav-list
+        display: flex
+        justify-content: space-between
+        margin-bottom: 5px
+    .top-nav-list li
+        flex: auto
+        &:last-child
+            a
+                border-right: none 
+    .top-nav-list li a
+        width: 100%
+        border-right: 1px solid $gray-color
+        padding: 0 15px
+        color: $gray-color
+        &:hover
+            color: $primary-color
+
+
+
+@media(min-width: 992px)
+    .number-top
+        margin-right: 0px
+    .header-top-box
+        justify-content: space-between
+    .number-box a 
+        font-size: 16px
+        margin: 0px 5px
+    .favorite-link-txt,
+    .comments-link-txt
+        display: block
+        font-size: 16px
+    .comments-link-numb,
+    .favorite-link-numb
+        font-size: 16px
+    .number-top 
+        flex: inherit
+    .logo
+        width: 220px
+    .basket
+        padding-top: 40px
+        width: 250px
+        font-size: 14px
+    .basket span
+        font-size: 16px
+    .basket-product a
+        font-size: 16px
+        display: inline-block
+    .header-middle-center-box
+        padding-top: 13px
+    .basket-image
+        width: 50px
